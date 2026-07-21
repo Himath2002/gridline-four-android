@@ -1,0 +1,25 @@
+# Gradle
+.gradle/
+**/build/
+
+# Android Studio and IntelliJ IDEA
+.idea/
+*.iml
+captures/
+
+# Local Android configuration
+local.properties
+
+# Native tooling
+.cxx/
+.externalNativeBuild/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Signing and packaged artifacts
+*.jks
+*.keystore
+*.apk
+*.aab

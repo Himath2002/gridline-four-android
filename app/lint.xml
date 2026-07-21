@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!--
+      Dependency and target update notices are reviewed separately. The project
+      is pinned to the locally verified Android 36 toolchain for reproducible
+      builds; all product-code and resource warnings remain enabled.
+    -->
+    <issue id="GradleDependency,OldTargetApi" severity="ignore" />
+</lint>
