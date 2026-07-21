@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="720" viewBox="0 0 1440 720" role="img" aria-labelledby="title description">
+  <title id="title">Gridline Four architecture</title>
+  <desc id="description">Three aligned layers show Android UI, lifecycle state, and pure Java domain logic with one-way state flow.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#173F38" flood-opacity="0.12" />
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0 0L12 6L0 12Z" fill="#0F766E" />
+    </marker>
+  </defs>
+
+  <rect width="1440" height="720" rx="32" fill="#F5F8F6" />
+  <text x="72" y="72" fill="#15231F" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Architecture with explicit rule boundaries</text>
+  <text x="72" y="108" fill="#56645F" font-family="Inter, Arial, sans-serif" font-size="18">Android renders immutable snapshots; the domain layer contains no Android dependencies.</text>
+
+  <g font-family="Inter, Arial, sans-serif" filter="url(#shadow)">
+    <g transform="translate(72 164)">
+      <rect width="376" height="400" rx="26" fill="#FFFFFF" />
+      <rect width="376" height="76" rx="26" fill="#D9EFE8" />
+      <rect y="52" width="376" height="24" fill="#D9EFE8" />
+      <text x="28" y="47" fill="#0F766E" font-size="15" font-weight="800" letter-spacing="1.5">ANDROID UI</text>
+
+      <rect x="28" y="108" width="320" height="66" rx="15" fill="#F0F6F3" />
+      <text x="48" y="137" fill="#15231F" font-size="17" font-weight="750">MainActivity</text>
+      <text x="48" y="158" fill="#56645F" font-size="14">Screen host + back navigation</text>
+
+      <rect x="28" y="190" width="320" height="92" rx="15" fill="#F0F6F3" />
+      <text x="48" y="219" fill="#15231F" font-size="17" font-weight="750">Feature fragments</text>
+      <text x="48" y="241" fill="#56645F" font-size="14">Home • profile • setup</text>
+      <text x="48" y="262" fill="#56645F" font-size="14">game • session overview</text>
+
+      <rect x="28" y="298" width="320" height="66" rx="15" fill="#F0F6F3" />
+      <text x="48" y="327" fill="#15231F" font-size="17" font-weight="750">View Binding + Material 3</text>
+      <text x="48" y="348" fill="#56645F" font-size="14">Typed views and accessible controls</text>
+    </g>
+
+    <g transform="translate(532 164)">
+      <rect width="376" height="400" rx="26" fill="#FFFFFF" />
+      <rect width="376" height="76" rx="26" fill="#FFE5DD" />
+      <rect y="52" width="376" height="24" fill="#FFE5DD" />
+      <text x="28" y="47" fill="#B8402E" font-size="15" font-weight="800" letter-spacing="1.5">LIFECYCLE STATE</text>
+
+      <rect x="28" y="108" width="320" height="74" rx="15" fill="#FFF5F1" />
+      <text x="48" y="138" fill="#15231F" font-size="17" font-weight="750">SessionViewModel</text>
+      <text x="48" y="160" fill="#56645F" font-size="14">Profiles, setup, navigation, records</text>
+
+      <rect x="28" y="198" width="320" height="74" rx="15" fill="#FFF5F1" />
+      <text x="48" y="228" fill="#15231F" font-size="17" font-weight="750">GameViewModel</text>
+      <text x="48" y="250" fill="#56645F" font-size="14">Match commands + outcome consumption</text>
+
+      <rect x="28" y="288" width="320" height="76" rx="15" fill="#FFF5F1" />
+      <text x="48" y="318" fill="#15231F" font-size="17" font-weight="750">LiveData&lt;GameSnapshot&gt;</text>
+      <text x="48" y="340" fill="#56645F" font-size="14">Immutable render state</text>
+    </g>
+
+    <g transform="translate(992 164)">
+      <rect width="376" height="400" rx="26" fill="#FFFFFF" />
+      <rect width="376" height="76" rx="26" fill="#FFF3C8" />
+      <rect y="52" width="376" height="24" fill="#FFF3C8" />
+      <text x="28" y="47" fill="#6B5600" font-size="15" font-weight="800" letter-spacing="1.5">PURE JAVA DOMAIN</text>
+
+      <rect x="28" y="108" width="320" height="74" rx="15" fill="#FFFAE9" />
+      <text x="48" y="138" fill="#15231F" font-size="17" font-weight="750">GameEngine</text>
+      <text x="48" y="160" fill="#56645F" font-size="14">Gravity, turns, wins, draw, undo</text>
+
+      <rect x="28" y="198" width="320" height="74" rx="15" fill="#FFFAE9" />
+      <text x="48" y="228" fill="#15231F" font-size="17" font-weight="750">TacticalComputerStrategy</text>
+      <text x="48" y="250" fill="#56645F" font-size="14">Win • block • prefer center</text>
+
+      <rect x="28" y="288" width="320" height="76" rx="15" fill="#FFFAE9" />
+      <text x="48" y="318" fill="#15231F" font-size="17" font-weight="750">Models + immutable results</text>
+      <text x="48" y="340" fill="#56645F" font-size="14">Disc • Move • Status • Profile</text>
+    </g>
+  </g>
+
+  <line x1="456" y1="364" x2="516" y2="364" stroke="#0F766E" stroke-width="4" marker-end="url(#arrow)" />
+  <line x1="916" y1="364" x2="976" y2="364" stroke="#0F766E" stroke-width="4" marker-end="url(#arrow)" />
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="72" y="608" width="1296" height="56" rx="28" fill="#17483F" />
+    <text x="720" y="643" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">No account • no network permission • no persistent personal data • backups disabled</text>
+  </g>
+</svg>

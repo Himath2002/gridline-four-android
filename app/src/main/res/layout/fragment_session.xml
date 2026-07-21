@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/session_title" android:textAppearance="@style/TextAppearance.GridlineFour.Headline" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/session_subtitle" android:textColor="@color/ink_muted" android:textSize="16sp" />
+
+        <com.google.android.material.card.MaterialCardView style="@style/Widget.GridlineFour.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+                <TextView android:id="@+id/player_one_heading" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.GridlineFour.Section" />
+                <TextView android:id="@+id/player_one_record" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/ink_muted" android:textSize="15sp" />
+                <TextView android:id="@+id/player_one_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:textColor="@color/ink_muted" android:textSize="15sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView style="@style/Widget.GridlineFour.Card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+                <TextView android:id="@+id/player_two_heading" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAppearance="@style/TextAppearance.GridlineFour.Section" />
+                <TextView android:id="@+id/player_two_record" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textColor="@color/ink_muted" android:textSize="15sp" />
+                <TextView android:id="@+id/player_two_rate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:textColor="@color/ink_muted" android:textSize="15sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton android:id="@+id/resume_button" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="24dp" android:text="@string/resume_game" app:cornerRadius="18dp" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/setup_button" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/new_setup" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/clear_button" style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/clear_statistics" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/home_button" style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/exit_to_home" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

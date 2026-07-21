@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.GridlineFour" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/coral</item>
+        <item name="colorOnSecondary">@color/ink</item>
+        <item name="android:colorBackground">@color/surface</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/ink</item>
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:statusBarColor">@color/surface</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="TextAppearance.GridlineFour.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.GridlineFour.Section" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/ink</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.GridlineFour.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+
+    <style name="AvatarChoice">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:background">@drawable/bg_avatar</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+</resources>
