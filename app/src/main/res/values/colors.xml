@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#15231F</color>
+    <color name="ink_muted">#56645F</color>
+    <color name="surface">#FAFCFB</color>
+    <color name="surface_soft">#EEF4F1</color>
+    <color name="brand">#0F766E</color>
+    <color name="coral">#FF715B</color>
+    <color name="gold">#F3C64F</color>
+    <color name="jade">#35A77A</color>
+    <color name="violet">#7656C9</color>
+    <color name="board">#173F38</color>
+    <color name="empty_disc">#DDE8E3</color>
+    <color name="white">#FFFFFF</color>
+</resources>

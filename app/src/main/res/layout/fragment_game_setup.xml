@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/setup_title" android:textAppearance="@style/TextAppearance.GridlineFour.Headline" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/setup_subtitle" android:textColor="@color/ink_muted" android:textSize="16sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/board_size" android:textAppearance="@style/TextAppearance.GridlineFour.Section" />
+        <RadioGroup android:id="@+id/board_size_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <RadioButton android:id="@+id/board_compact" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/board_compact" />
+            <RadioButton android:id="@+id/board_classic" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/board_classic" />
+            <RadioButton android:id="@+id/board_expanded" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/board_expanded" />
+        </RadioGroup>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/play_mode" android:textAppearance="@style/TextAppearance.GridlineFour.Section" />
+        <RadioGroup android:id="@+id/game_mode_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <RadioButton android:id="@+id/mode_computer" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/mode_computer" />
+            <RadioButton android:id="@+id/mode_local" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/mode_local" />
+        </RadioGroup>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/disc_palette" android:textAppearance="@style/TextAppearance.GridlineFour.Section" />
+        <RadioGroup android:id="@+id/palette_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <RadioButton android:id="@+id/palette_coral_gold" android:layout_width="match_parent" android:layout_height="wrap_content" android:checked="true" android:text="@string/palette_coral_gold" />
+            <RadioButton android:id="@+id/palette_jade_violet" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/palette_jade_violet" />
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton android:id="@+id/start_button" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="28dp" android:text="@string/start_match" app:cornerRadius="18dp" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/back_button" style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/back_home" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

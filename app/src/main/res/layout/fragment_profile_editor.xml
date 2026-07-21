@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/profile_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.GridlineFour.Headline" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/profile_subtitle"
+            android:textColor="@color/ink_muted"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:hint="@string/player_name"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="16dp"
+            app:boxCornerRadiusBottomStart="16dp"
+            app:boxCornerRadiusTopEnd="16dp"
+            app:boxCornerRadiusTopStart="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/player_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textPersonName"
+                android:maxLength="24"
+                android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/create_profile"
+            android:textAppearance="@style/TextAppearance.GridlineFour.Section" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:columnCount="3"
+            android:rowCount="2">
+
+            <ImageButton android:id="@+id/avatar_one" style="@style/AvatarChoice" android:contentDescription="@string/avatar_choice" android:src="@drawable/avatar_orbit" />
+            <ImageButton android:id="@+id/avatar_two" style="@style/AvatarChoice" android:contentDescription="@string/avatar_choice" android:src="@drawable/avatar_comet" />
+            <ImageButton android:id="@+id/avatar_three" style="@style/AvatarChoice" android:contentDescription="@string/avatar_choice" android:src="@drawable/avatar_spark" />
+            <ImageButton android:id="@+id/avatar_four" style="@style/AvatarChoice" android:contentDescription="@string/avatar_choice" android:src="@drawable/avatar_leaf" />
+            <ImageButton android:id="@+id/avatar_five" style="@style/AvatarChoice" android:contentDescription="@string/avatar_choice" android:src="@drawable/avatar_prism" />
+            <ImageButton android:id="@+id/avatar_six" style="@style/AvatarChoice" android:contentDescription="@string/avatar_choice" android:src="@drawable/avatar_wave" />
+        </GridLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/save_profile"
+            app:cornerRadius="18dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_button"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/cancel" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
