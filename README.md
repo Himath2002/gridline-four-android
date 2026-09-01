@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/hero.svg" alt="Gridline Four — a configurable Android four-in-a-row game with a testable rules engine" width="100%">
+  <img src="docs/hero.svg" alt="Gridline Four - a configurable Android four-in-a-row game with a testable rules engine" width="100%">
 </p>
 
 <p align="center">
@@ -24,14 +24,14 @@ The engineering focus is equally clear. Gravity, turn order, legal moves, wins, 
 
 ### Product highlights
 
-- **Three board formats** — compact 5 × 6, classic 6 × 7, and expanded 7 × 8.
-- **Two play modes** — two local players or one player against the tactical computer.
-- **Local profiles** — names, six original vector avatars, and session-only results.
-- **Two disc palettes** — coral + gold or jade + violet.
-- **Reversible local play** — undo the latest move in two-player mode.
-- **Session controls** — restart a board, review records, clear statistics, or configure a new match.
-- **Adaptive state** — activity-scoped ViewModels retain the active session across configuration changes.
-- **Privacy by construction** — no network permission, no personal-data backup, and no database.
+- **Three board formats** - compact 5 × 6, classic 6 × 7, and expanded 7 × 8.
+- **Two play modes** - two local players or one player against the tactical computer.
+- **Local profiles** - names, six original vector avatars, and session-only results.
+- **Two disc palettes** - coral + gold or jade + violet.
+- **Reversible local play** - undo the latest move in two-player mode.
+- **Session controls** - restart a board, review records, clear statistics, or configure a new match.
+- **Adaptive state** - activity-scoped ViewModels retain the active session across configuration changes.
+- **Privacy by construction** - no network permission, no personal-data backup, and no database.
 
 ## Match journey
 
@@ -112,7 +112,7 @@ Let `R` be rows and `C` be columns.
 | Undo latest move | `O(1)` | `O(1)` |
 | Copy a render snapshot | `O(R × C)` | `O(R × C)` |
 | Choose a tactical computer column | `O(C × (R + C))` | `O(C)` |
-| Retained board + history | — | `O(R × C)` |
+| Retained board + history | - | `O(R × C)` |
 
 ## Run locally
 
